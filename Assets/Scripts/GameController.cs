@@ -24,13 +24,13 @@ public class GameController : MonoBehaviour
     {
         blockSize = 5.65f;
         lerpTime = 5f;
+        MainMenuManager.depth = 0;
         worldGenerator = worldGeneratorObject.GetComponent<WorldGenerator>();
         layerList = new List<GameObject>();
         targetLocList = new List<Vector3>();
         AddLayer(0);
         AddLayer(0);
         AddLayer(0);
-        MainMenuManager.depth = 0;
         audioManager = FindObjectOfType<AudioManager>();
     }
 
